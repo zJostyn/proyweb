@@ -36,7 +36,7 @@ export class RegisterComponent implements OnInit{
       ((data) => {
         if (this.selectedFile) {
           this.imagenes.uploadImage(this.selectedFile).subscribe(response => {
-            let ruta = 'http://localhost:3000/get-image';
+            let ruta = 'https://api-proyweb.onrender.com/get-image';
             ruta += response;
             form.avatar = ruta;
             this.servicioUsuario.CrearUsuario(form).subscribe
@@ -53,7 +53,7 @@ export class RegisterComponent implements OnInit{
           )
           });
         } else {
-            let ruta = 'http://localhost:3000/get-image/usuario.png';
+            let ruta = 'https://api-proyweb.onrender.com/get-image/usuario.png';
             form.avatar = ruta;
             this.servicioUsuario.CrearUsuario(form).subscribe
             ((data) => {
