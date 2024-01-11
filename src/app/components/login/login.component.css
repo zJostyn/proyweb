@@ -8,7 +8,6 @@
     width: 50%;
     height: 100%;
 }
-
 .right {
     width: 50vh;
     align-items: center;
@@ -16,7 +15,6 @@
     height: 100%;
     margin-left: 50%;
 }
-
 .login-box .avatar {
     height: 100px;
     width: 100px;
@@ -25,7 +23,6 @@
     left: calc(50% - 50px);
     border-radius: 30px;
 }
-
 .login-box {
     width: 400px;
     height: 450px;
@@ -38,7 +35,6 @@
     background: rgba(4, 63, 119, 0.712);
     border-radius: 30px;
 }
-
 .login-box h1 {
     margin: 0;
     padding: 0 0 20px;
@@ -46,7 +42,6 @@
     font-size: 22px;
     color: white;
 }
-
 .login-box label {
     margin: 0;
     padding: 0;
@@ -54,27 +49,22 @@
     font-weight: bold;
     color: white;
 }
-
 .login-box input {
     width: 100%;
     margin-bottom: 20px;
 }
-
 .login-box input::placeholder {
     color: white;
 }
-
 .login-box a {
     color: rgb(255, 217, 45);
     text-decoration: none;
     font-size: 12px;
     line-height: 20px;
 }
-
 .login-box a:hover {
     color: white;
 }
-
 .login-box input[type="text"],
 .login-box input[type="password"] {
     border: none;
@@ -85,7 +75,6 @@
     font-size: 16px;
     color: white;
 }
-
 .login-box input[type="submit"] {
     border: none;
     outline: none;
@@ -95,11 +84,9 @@
     border-radius: 20px;
     font-size: 18px;
 }
-
 .login-box input[type="submit"]:hover {
     background: #7d7e7e;
 }
-
 .welcome-box {
     height: 100px;
     width: 500px;
@@ -108,13 +95,11 @@
     position: absolute;
     transform: translate(-50%, -50%);
 }
-
 .welcome-box .logo {
     height: 90%;
     top: -150px;
     position: absolute;
 }
-
 .welcome-box .bienvenido {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 30px;
@@ -123,7 +108,6 @@
     top: -30px;
     left: 170px;
 }
-
 .welcome-box .titulo {
     text-align: center;
     position: relative;
@@ -132,7 +116,6 @@
     font-size: 1.5rem;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-
 .welcome-box .mensaje {
     text-align: justify;
     position: relative;
@@ -140,7 +123,6 @@
     color: rgb(0, 0, 0);
     font-family: Arial, Helvetica, sans-serif;
 }
-
 .slide {
     position: relative;
     box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
@@ -150,14 +132,13 @@
     width: 340px;
     left: 85px;
 }
-
 .videopromocion {
     position: relative;
     width: 330px;
+    height: 185px;
     top: 5px;
     left: 5px;
 }
-
 #titulo {
     width: 100%;
     position: absolute;
@@ -170,26 +151,22 @@
     z-index: 9999;
     text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), -1px 0px 2px rgba(255, 255, 255, 0);
 }
-
 .mensaje-exito .img {
     position: absolute;
     top: -25px;
     width: 60px;
     height: 50px;
 }
-
 .mensaje-exito .txt {
     position: absolute;
     top: -8px;
     left: 110px;
 }
-
 .mensaje-exito .txtdos {
     position: absolute;
     left: 27px;
     top: 15px;
 }
-
 .mensaje-exito {
     display: none;
     position: fixed;
@@ -203,7 +180,6 @@
     border-radius: 5px;
     z-index: 1000;
 }
-
 .mensaje-error {
     display: none;
     position: fixed;
@@ -217,28 +193,22 @@
     border-radius: 5px;
     z-index: 1000;
 }
-
 .mensaje-error .img {
     position: absolute;
     top: -25px;
     width: 60px;
     height: 55px;
 }
-
 .mensaje-error .txt {
     position: absolute;
     top: -8px;
     left: 110px;
 }
-
 .mensaje-error .txtdos {
     position: absolute;
     left: 65px;
     top: 15px;
 }
-
-
-/* Consulta de medios para pantallas más pequeñas, como celulares */
 
 @media only screen and (max-width: 600px) {
     .left {
