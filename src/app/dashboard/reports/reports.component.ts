@@ -226,7 +226,7 @@ export class ReportsComponent implements OnInit{
           elementos += '<option value = "' + this.detallesDanios[i].iddetalledanio + '">' + this.detallesDanios[i].detalledanio + '</option>';
       }  
           subtipodaño.innerHTML = elementos;
-        }, 200);
+        }, 70);
     });
   }
 
