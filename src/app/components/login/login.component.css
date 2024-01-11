@@ -237,3 +237,49 @@
     left: 65px;
     top: 15px;
 }
+
+@media only screen and (max-width: 600px) {
+    .left {
+        width: 620px;
+        height: 570px;
+        /* O el ancho que desees para la versión responsiva */
+        float: none;
+        /* Elimina el flotado para que no afecte el posicionamiento */
+        margin-right: 0;
+        /* Elimina el margen derecho */
+        background-image: none;
+        align-items: center;
+    }
+    .login-box {
+        width: 350px;
+        height: 450px;
+        left: 310px;
+        background: rgba(4, 63, 119, 0.712);
+        border-radius: 30px;
+        margin-top: 0%;
+        position: none;
+        top: 30%;
+    }
+    .right {
+        width: 620px;
+        height: 570px;
+        margin-left: 0;
+        /* Elimina el margen derecho */
+        position: absolute;
+        /* Cambia a posición relativa para que se apile encima */
+    }
+    .right img {
+        top: -1000px;
+        margin-left: 0%;
+        height: 50px;
+        position: none;
+    }
+    .welcome-box {
+        height: 100px;
+        width: 500px;
+        top: 22%;
+        left: 310px;
+        position: absolute;
+        transform: translate(-50%, -50%);
+    }
+}
