@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class TiposdañosService {
 
-  servidor = "http://localhost:3000";
+  servidor = "https://api-proyweb.onrender.com";
 
   constructor(private servicio:HttpClient) { }
 

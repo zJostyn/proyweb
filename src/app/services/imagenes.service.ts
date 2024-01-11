@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ImagenesService {
-  servidor = "http://localhost:3000";
+  servidor = "https://api-proyweb.onrender.com";
 
   constructor(private servicio:HttpClient) { }
 
