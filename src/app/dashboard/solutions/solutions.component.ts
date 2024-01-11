@@ -47,7 +47,7 @@ export class SolutionsComponent implements OnInit {
     setTimeout(() => {
       this.mostrarUbicaciones();
       this.mostrarReportesAbiertos();
-    }, 120);
+    }, 300);
   }
   
   obtenerFecha() {
