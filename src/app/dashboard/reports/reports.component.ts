@@ -374,7 +374,7 @@ export class ReportsComponent implements OnInit{
   crearReporte(nuevoreporte:any) {
     if (this.selectedFile) {
           this.imagenes.uploadImage(this.selectedFile).subscribe(response => {
-            let ruta = 'http://localhost:3000/get-image';
+            let ruta = 'https://api-proyweb.onrender.com/get-image';
             ruta += response;
             nuevoreporte.evidencia = ruta;
             console.log(nuevoreporte);
