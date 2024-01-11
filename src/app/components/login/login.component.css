@@ -154,7 +154,6 @@
 .videopromocion {
     position: relative;
     width: 330px;
-    height: 185px;
     top: 5px;
     left: 5px;
 }
@@ -238,10 +237,13 @@
     top: 15px;
 }
 
+
+/* Consulta de medios para pantallas más pequeñas, como celulares */
+
 @media only screen and (max-width: 600px) {
     .left {
-        width: 620px;
-        height: 570px;
+        width: 420px;
+        height: 370px;
         /* O el ancho que desees para la versión responsiva */
         float: none;
         /* Elimina el flotado para que no afecte el posicionamiento */
@@ -252,34 +254,70 @@
     }
     .login-box {
         width: 350px;
-        height: 450px;
-        left: 310px;
+        height: 400px;
+        left: 210px;
         background: rgba(4, 63, 119, 0.712);
         border-radius: 30px;
         margin-top: 0%;
         position: none;
-        top: 30%;
+        top: 50%;
     }
     .right {
-        width: 620px;
-        height: 570px;
+        width: 420px;
+        height: 370px;
         margin-left: 0;
         /* Elimina el margen derecho */
         position: absolute;
         /* Cambia a posición relativa para que se apile encima */
     }
-    .right img {
-        top: -1000px;
-        margin-left: 0%;
-        height: 50px;
-        position: none;
-    }
     .welcome-box {
-        height: 100px;
-        width: 500px;
-        top: 22%;
-        left: 310px;
+        width: 400px;
+        height: 300px;
+        top: 290px;
+        left: 110px;
         position: absolute;
         transform: translate(-50%, -50%);
+    }
+    .welcome-box .logo {
+        height: 50%;
+        top: -15%;
+        left: 170px;
+    }
+    .welcome-box .bienvenido {
+        left: 230px;
+        top: 35px;
+    }
+    .welcome-box .titulo {
+        text-align: center;
+        position: relative;
+        left: 100px;
+        top: 30%;
+        color: rgb(89, 59, 255);
+        font-size: 1.5rem;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    .welcome-box .mensaje {
+        width: 350px;
+        text-align: justify;
+        position: none;
+        left: 125px;
+        top: 40px;
+        color: rgb(0, 0, 0);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .slide {
+        position: relative;
+        box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+        top: -10px;
+        margin-top: 15px;
+        height: 300px;
+        width: 340px;
+        left: 85px;
+    }
+    .videopromocion {
+        position: relative;
+        width: 330px;
+        top: 50px;
+        left: 50px;
     }
 }
