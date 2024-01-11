@@ -219,7 +219,9 @@ export class ReportsComponent implements OnInit{
     const tipodaño = document.getElementById('tipodaño') as HTMLInputElement;
     const subtipodaño = document.getElementById('subtipodaño') as HTMLInputElement;    
     tipodaño.addEventListener('change', (event) => {
-      this.llenarDetallesDaño(tipodaño.value);
+      setTimeout(() => {
+	      this.llenarDetallesDaño(tipodaño.value);
+        }, 100);
       setTimeout(() => {
         let elementos = '<option selected disables> Seleccione una opción</option>'
         for (let i = 0; i < this.detallesDanios.length; i++) {
