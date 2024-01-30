@@ -3,7 +3,7 @@
         <h2 class="numeroreporte">Numero de Reporte: {{reporte.idreporte}}</h2>
         <h4 class="fechareporte">Fecha del Reporte: {{reporte.fecha}}</h4>
         <h4 class="estadoreporte" *ngIf="reporte.estadosolucion != null">Estado de la Solucion: {{reporte.estadosolucion}}</h4>
-        <h4 class="estadoreporte">Estado del Reporte: {{reporte.estadoreporte}}</h4>
+        <h4 class="estadoreporte" *ngIf="reporte.estadoreporte != null" >Estado del Reporte: {{reporte.estadoreporte}}</h4>
         <hr>
         <a class="estudiantereporte" *ngIf="reporte.estadosolucion != null">Encargado que soluciono el reporte: {{reporte.usuario}}</a>
         <p class="ldescripcion" *ngIf="reporte.estadosolucion == null">Descripcion del Reporte:</p>
