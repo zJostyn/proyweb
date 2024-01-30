@@ -29,7 +29,9 @@ export class ReportComponent implements OnInit {
 
   }
 ngOnInit(): void {
-    this.mostrarDatos();
+    setTimeout(() => {
+      this.mostrarDatos();
+    }, 200);
   }
 
   mostrarDatos(){
