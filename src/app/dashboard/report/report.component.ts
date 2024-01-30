@@ -52,7 +52,7 @@ ngOnInit(): void {
               this.reportes.detallesReporteU(this.id, this.infoUsuario[0].idusuario).subscribe(
               data => this.reporteDetalle = data,
               error => console.log(error));
-          } else {
+          } else if(this.estadoReporte[0]?.estadoreporte == 'Cerrado') {
               this.reportes.detallesReporteUSolu(this.id, this.infoUsuario[0].idusuario).subscribe(
               data => this.reporteDetalle = data,
               error => console.log(error));
