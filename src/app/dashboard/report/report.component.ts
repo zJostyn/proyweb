@@ -57,7 +57,7 @@ ngOnInit(): void {
               data => this.reporteDetalle = data,
               error => console.log(error));
           }
-        }, 200);
+        }, 400);
     }
   }
 
