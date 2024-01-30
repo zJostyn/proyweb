@@ -48,12 +48,12 @@ ngOnInit(): void {
         data => this.estadoReporte = data,
         error => console.log(error));
         setTimeout(() => {
-          if(this.estadoReporte[0]?.estadoreporte == 'Abierto') {
-            this.reportes.detallesReporteU(this.id, this.infoUsuario[0].idusuario).subscribe(
+          if(this.estadoReporte[0]?.estadoreporte == 'Cerrado') {
+              this.reportes.detallesReporteUSolu(this.id, this.infoUsuario[0].idusuario).subscribe(
               data => this.reporteDetalle = data,
               error => console.log(error));
           } else {
-            this.reportes.detallesReporteUSolu(this.id, this.infoUsuario[0].idusuario).subscribe(
+              this.reportes.detallesReporteU(this.id, this.infoUsuario[0].idusuario).subscribe(
               data => this.reporteDetalle = data,
               error => console.log(error));
           }
