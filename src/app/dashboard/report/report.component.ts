@@ -48,7 +48,7 @@ ngOnInit(): void {
         data => this.estadoReporte = data,
         error => console.log(error));
         setTimeout(() => {
-          if(this.estadoReporte[0].estadoreporte == 'Abierto') {
+          if(this.estadoReporte[0?.estadoreporte == 'Abierto') {
             this.reportes.detallesReporteU(this.id, this.infoUsuario[0].idusuario).subscribe(
               data => this.reporteDetalle = data,
               error => console.log(error));
@@ -57,7 +57,7 @@ ngOnInit(): void {
               data => this.reporteDetalle = data,
               error => console.log(error));
           }
-        }, 400);
+        }, 200);
     }
   }
 
